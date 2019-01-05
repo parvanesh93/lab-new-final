@@ -164,12 +164,11 @@ class TransactionSigner extends React.Component {
         <div className="so-chunk">
           <div className="pageIntro">
             <p>
-              The transaction signer lets you add signatures to a Stellar transaction. Signatures are used in the network to prove that the account is authorized to perform the operations in the transaction.
+              The transaction signer lets you add signatures to a Kuknos transaction. Signatures are used in the network to prove that the account is authorized to perform the operations in the transaction.
             </p>
             <p>
               For simple transactions, you only need one signature from the correct account. Some advanced signatures may require more than one signature if there are multiple source accounts or signing keys.
             </p>
-            <p><a href="https://www.stellar.org/developers/learn/concepts/multi-sig.html" target="_blank">Read more about signatures on the developer's site.</a></p>
           </div>
         </div>
       </div>

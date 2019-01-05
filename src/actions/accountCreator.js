@@ -30,7 +30,7 @@ export function startFriendbotRequest(target) {
       status: 'loading',
     });
 
-    axios.get('https://friendbot.stellar.org/?addr=' + target)
+    axios.get('https://friendbot.kuknos.org:8100/?addr=' + target)
       .then(r => {
         dispatchInNewStack(dispatch, {
           type: FINISH_FRIENDBOT_REQUEST,
@@ -44,7 +44,7 @@ export function startFriendbotRequest(target) {
         let code, message;
         if (e.response.status === 0) {
           code = '';
-          message = 'Unable to reach Friendbot server at https://friendbot.stellar.org';
+          message = 'Unable to reach Friendbot server at https://friendbot.kuknos.org:8100';
         } else {
           code = JSON.stringify(e.response.data, null, 2);
           message = `Failed to fund ${target} on the test network`;

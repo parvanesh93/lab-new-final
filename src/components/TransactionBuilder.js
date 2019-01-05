@@ -30,7 +30,7 @@ class TransactionBuilder extends React.Component {
       <div className="so-back">
         <div className="so-chunk">
           <div className="pageIntro">
-            <p>The transaction builder lets you build a new Stellar transaction.</p>
+            <p>The transaction builder lets you build a new Kuknos transaction.</p>
             <p>
               This transaction will start out with no signatures. To make it into the ledger, this transaction will then need to be signed and submitted to the network.
             </p>

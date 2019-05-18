@@ -57,7 +57,7 @@ class TransactionSigner extends React.Component {
         'Transaction Hash': <EasySelect plain={true}><pre className="so-code so-code__wrap"><code>{transaction.hash().toString('hex')}</code></pre></EasySelect>,
         'Source account': transaction.source,
         'Sequence number': transaction.sequence,
-        'Transaction Fee (stroops)': transaction.fee,
+        'Transaction Fee (peanuts)': transaction.fee,
         'Number of operations': transaction.operations.length,
         'Number of existing signatures': transaction.signatures.length,
       };
@@ -123,7 +123,9 @@ class TransactionSigner extends React.Component {
           </div>
           <div className="so-chunk">
             <div className="TxSignerKeys TransactionSigner__keys">
-              <p className="TxSignerKeys__title">Signatures <HelpMark href="https://www.stellar.org/developers/learn/concepts/multi-sig.html" /></p>
+              <p className="TxSignerKeys__title">Signatures 
+              {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/multi-sig.html" /> */}
+              </p>
               <div className="optionsTable">
                 <OptionsTablePair label="Add Signer">
                   <MultiPicker

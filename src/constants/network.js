@@ -3,11 +3,11 @@ import {Network, Networks} from 'stellar-sdk';
 const NETWORK = {
   available: {
     test: {
-      horizonURL: 'https://horizon.kuknos.org:8000',
+      horizonURL: 'https://hz1-test.kuknos.org:8006',
       networkPassphrase: 'Kuknos-NET'
     },
     public: {
-      horizonURL: 'https://horizon.kuknos.org:8000',
+      horizonURL: 'https://hz1-test.kuknos.org:8006',
       networkPassphrase: 'Kuknos-NET'
     }
   },

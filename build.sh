@@ -1,5 +1,8 @@
 #!/bin/bash
 
+rm -rf dist
+npm run build
+
 export IMAGE_NAME=stellar/laboratory
 
 docker build . --no-cache -t $IMAGE_NAME

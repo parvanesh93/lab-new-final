@@ -20,7 +20,7 @@ addEventHandler(transactionBuilderMetrics)
 
 class TransactionBuilder extends React.Component {
   render() {
-    let {dispatch} = this.props;
+    let {dispatch} = this.props; 
     let {
       attributes,
       operations,

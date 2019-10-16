@@ -1,6 +1,13 @@
+FROM node:10.16.3-stretch
+
+WORKDIR /app
+ADD . /app
+
+RUN npm install && npm run build
+
 FROM nginx
 
-ADD ./dist/* /usr/share/nginx/html/
+COPY --from=0 /app/dist/ /usr/share/nginx/html/
 ADD ./index.html /usr/share/nginx/html/
 
 RUN mv /usr/share/nginx/html/app*.js /usr/share/nginx/html/app.js && \

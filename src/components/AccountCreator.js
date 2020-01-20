@@ -76,18 +76,20 @@ class AccountCreator extends React.Component {
               <h3>2. Friendbot: Fund a test network account</h3>
               <p>The friendbot is a horizon API endpoint that will fund an account with 1000 Paymon on the test network.</p>
 
-          <PubKeyPicker
-            className="picker--spaceBottom"
-            value={state.friendbotTarget}
-            onUpdate={(accountId) => {
-              dispatch(updateFriendbotTarget(accountId))
-            }} />
-          <button className="s-button"
-            disabled={state.friendbotTarget.length === 0}
-            onClick={() => dispatch(startFriendbotRequest(state.friendbotTarget))}
-            >Get test network PMN</button>
-          {friendbotMessage}
-          {friendbotResultCodeblock}
+              <PubKeyPicker
+                className="picker--spaceBottom"
+                value={state.friendbotTarget}
+                onUpdate={(accountId) => {
+                  dispatch(updateFriendbotTarget(accountId))
+                }} />
+              <button className="s-button"
+                disabled={state.friendbotTarget.length === 0}
+                onClick={() => dispatch(startFriendbotRequest(state.friendbotTarget))}
+                >Get test network lumens</button>
+              {friendbotMessage}
+              {friendbotResultCodeblock}
+            </div>
+          </div>
         </div>
       )}
     </div>

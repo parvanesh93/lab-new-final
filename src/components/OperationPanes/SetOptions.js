@@ -23,9 +23,7 @@ const accountFlagFieldsClear = {
 export default function SetOptions(props) {
   return [
     <OptionsTablePair
-      label={<span>Inflation Destination 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#inflation-destination" /> */}
-        </span>}
+      label={<span>Inflation Destination </span>}
       optional={true} key="inflationDest">
       <PubKeyPicker
         value={props.values['inflationDest']}
@@ -33,9 +31,7 @@ export default function SetOptions(props) {
         />
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Set Flags 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#flags" /> */}
-        </span>}
+      label={<span>Set Flags</span>}
       optional={true} key="setFlags">
       <FlagfieldPicker
         value={props.values['setFlags']}
@@ -45,9 +41,7 @@ export default function SetOptions(props) {
       <p className="optionsTable__pair__content__note">Selected <a href="https://en.wikipedia.org/wiki/Flag_field" target="_blank">flags</a> mean to add selected flags in addition to flags already present on the account.</p>
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Clear Flags 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#flags" /> */}
-        </span>}
+      label={<span>Clear Flags</span>}
       optional={true} key="clearFlags">
       <FlagfieldPicker
         value={props.values['clearFlags']}
@@ -57,9 +51,7 @@ export default function SetOptions(props) {
       <p className="optionsTable__pair__content__note">Selected <a href="https://en.wikipedia.org/wiki/Flag_field" target="_blank">flags</a> mean to remove selected flags already present on the account.</p>
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Master Weight 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#thresholds" /> */}
-        </span>}
+      label={<span>Master Weight</span>}
       optional={true} key="masterWeight">
       <Unsigned8bitIntPicker
         value={props.values['masterWeight']}
@@ -67,9 +59,7 @@ export default function SetOptions(props) {
         />
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Low Threshold 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#thresholds" /> */}
-        </span>}
+      label={<span>Low Threshold</span>}
       optional={true} key="lowThreshold">
       <Unsigned8bitIntPicker
         value={props.values['lowThreshold']}
@@ -77,9 +67,7 @@ export default function SetOptions(props) {
         />
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Medium Threshold 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#thresholds" /> */}
-        </span>}
+      label={<span>Medium Threshold</span>}
       optional={true} key="medThreshold">
       <Unsigned8bitIntPicker
         value={props.values['medThreshold']}
@@ -87,9 +75,7 @@ export default function SetOptions(props) {
         />
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>High Threshold 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/accounts.html#thresholds" /> */}
-        </span>}
+      label={<span>High Threshold</span>}
       optional={true} key="highThreshold">
       <Unsigned8bitIntPicker
         value={props.values['highThreshold']}
@@ -97,9 +83,7 @@ export default function SetOptions(props) {
         />
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Signer Type 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/multi-sig.html#additional-signing-keys" /> */}
-        </span>}
+      label={<span>Signer Type</span>}
       optional={true} key="signer">
       <SignerPicker
         value={props.values['signer']}
@@ -108,9 +92,7 @@ export default function SetOptions(props) {
       <p className="optionsTable__pair__content__note">Used to add/remove or adjust weight of an additional signer on the account.</p>
     </OptionsTablePair>,
     <OptionsTablePair
-      label={<span>Home Domain 
-        {/* <HelpMark href="https://www.stellar.org/developers/learn/concepts/multi-sig.html#additional-signing-keys" /> */}
-        </span>}
+      label={<span>Home Domain</span>}
       optional={true} key="homeDomain">
       <TextPicker
         value={props.values['homeDomain']}
